@@ -36,38 +36,31 @@ let s:light_blue = "#aaccee"
 let s:purple = "#dd88dd"
 let s:grey = "#888892"
 
-" helper function
-function! s:Highlight(group, fg, ...)
-    " group, guifg, guibg, gui, guisp
-
-    let fg = a:fg
-
-    if a:0 >= 1
-        let bg = a:1
-    else
-        let bg = s:none
-    endif
-
-    if a:0 >= 2
-        let gui_ = a:2
-    else
-        let gui_ = s:none
-    endif
-
-    if a:0 >= 3
-        let sp_ = a:3
-    else
-        let sp_ = s:none
-    endif
-
-    let highlight_string = [ "hi", a:group,
-                \ "guifg=" . fg,
-                \ "guibg=" . bg,
-                \ "gui=" . gui_,
-                \ "guisp=" . sp_,
-                \ ]
-
-    execute join(highlight_string, " ")
-endfunction
-
 " highlight the groups
+execute "hi Comment guifg=" . s:grey . " gui=italic"
+execute "hi ColorColumn guibg=" . s:dark10
+execute "hi Conceal guifg=" . s:light10
+execute "hi Cursor guifg=" . s:dark01 . " guibg=" . s:light01
+execute "hi CursorColumn guibg=" . s:dark10
+execute "hi Directory guifg=" . s:blue
+execute "hi DiffAdd guifg=" . s:dark01 . " guibg=" . s:green
+execute "hi DiffChange guifg=" . s:dark01 . " guibg=" . s:orange
+execute "hi DiffDelete guifg=" . s:light01 . " guibg=" . s:red
+execute "hi DiffText guifg=" . s:dark01 . " guibg=" . s:yellow
+execute "hi EndOfBuffer guifg=" . s:blue
+execute "hi VertSplit guifg=" . s:grey
+execute "hi FoldColumn guibg=" . s:dark10
+execute "hi SignColumn guibg=" . s:dark01
+execute "hi IncSearch guibg=" . s:dark10
+" TODO: start from LineNr
+execute "hi Normal guifg=" . s:light00 . " guibg=" . s:dark00
+
+" linked groups
+hi! link lCursor Cursor
+hi! link CursorIM Cursor
+hi! link CursorLine CursorColumn
+hi! link TermCursor Cursor
+hi! link TermCursorNC Cursor
+hi! link ErrorMsg DiffDelete
+hi! link Folded CursorColumn
+hi! link Substitue IncSearch
