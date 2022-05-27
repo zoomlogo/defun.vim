@@ -148,3 +148,11 @@ execute "hi LspDiagnosticsVirtualTextError guifg=" . s:red
 execute "hi LspDiagnosticsVirtualTextWarning guifg=" . s:orange
 execute "hi LspDiagnosticsVirtualTextInformation guifg=" . s:light10
 execute "hi LspDiagnosticsVirtualTextHint guifg=" . s:yellow
+
+" plugins
+" wfxr/minimap.vim
+execute "hi MinimapCurrentLine guifg=" . s:green
+" lewis6991/gitsigns.nvim
+execute "hi GitSignsAdd guifg=" . s:green . " guibg=" . s:dark01
+execute "hi GitSignsChange guifg=" . s:orange . " guibg=" . s:dark01
+execute "hi GitSignsDelete guifg=" . s:red . " guibg=" . s:dark01
