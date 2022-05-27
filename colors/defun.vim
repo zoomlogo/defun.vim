@@ -137,3 +137,14 @@ execute "hi Italic gui=italic"
 
 execute "hi Error guifg=" . s:red
 execute "hi Todo guifg=" . s:light10
+
+" nvim lsp
+execute "hi DiagnosticError guifg=" . s:red . " guibg=" . s:dark01
+execute "hi DiagnosticWarning guifg=" . s:orange . " guibg=" . s:dark01
+execute "hi DiagnosticInfo guifg=" . s:light10 . " guibg=" . s:dark01
+execute "hi DiagnosticHint guifg=" . s:yellow . " guibg=" . s:dark01
+
+execute "hi LspDiagnosticsVirtualTextError guifg=" . s:red
+execute "hi LspDiagnosticsVirtualTextWarning guifg=" . s:orange
+execute "hi LspDiagnosticsVirtualTextInformation guifg=" . s:light10
+execute "hi LspDiagnosticsVirtualTextHint guifg=" . s:yellow
