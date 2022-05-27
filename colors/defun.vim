@@ -52,8 +52,20 @@ execute "hi VertSplit guifg=" . s:grey
 execute "hi FoldColumn guibg=" . s:dark10
 execute "hi SignColumn guibg=" . s:dark01
 execute "hi IncSearch guibg=" . s:dark10
-" TODO: start from LineNr
+execute "hi LineNr guifg=" . s:light11 . " guibg=" . s:dark01
+execute "hi CursorLineNr guifg=" . s:light00 . " guibg=" . s:dark01
+execute "hi MatchParen guibg=" . s:dark11
+execute "hi ModeMsg guifg=" . s:light10
 execute "hi Normal guifg=" . s:light00 . " guibg=" . s:dark00
+execute "hi NormalFloat guifg=" . s:light11 . " guibg=" . s:dark00
+execute "hi Pmenu guifg=" . s:light00 . " guibg=" . s:dark10
+execute "hi PmenuSel guifg=" . s:light00 . " guibg=" . s:dark11
+execute "hi PmenuSbar guifg=" . s:light10 . " guibg=" . s:dark10
+execute "hi PmenuThumb guifg=" . s:light00
+execute "hi Question guifg=" . s:green
+execute "hi SpellBad gui=underline"
+execute "hi SpellLocal guifg=" . s:light01
+" TODO: start from StatusLine
 
 " linked groups
 hi! link lCursor Cursor
@@ -64,3 +76,13 @@ hi! link TermCursorNC Cursor
 hi! link ErrorMsg DiffDelete
 hi! link Folded CursorColumn
 hi! link Substitue IncSearch
+hi! link MsgArea ModeMsg
+hi! link MsgSeparator ModeMsg
+hi! link MoreMsg ModeMsg
+hi! link NonText EndOfBuffer
+hi! link NormalNC NormalFloat
+hi! link QuickFixLine NormalNC
+hi! link Search IncSearch
+hi! link SpecialKey NonText
+hi! link SpellCap SpellBad
+hi! link SpellRare SpellLocal
