@@ -65,7 +65,15 @@ execute "hi PmenuThumb guifg=" . s:light00
 execute "hi Question guifg=" . s:green
 execute "hi SpellBad gui=underline"
 execute "hi SpellLocal guifg=" . s:light01
-" TODO: start from StatusLine
+execute "hi StatusLine guibg=" . s:dark10
+execute "hi StatusLineNC guibg=" . s:dark11
+execute "hi TabLineFill guibg=" . s:dark01
+execute "hi TabLineSel guibg=" . s:dark01
+execute "hi Title guifg=" . s:purple
+execute "hi Visual guibg=" . s:dark11
+execute "hi VisualNOS guibg=" . s:dark10
+execute "hi WhiteSpace guifg=" . s:grey
+execute "hi WildMenu guibg=" . s:dark11
 
 " linked groups
 hi! link lCursor Cursor
@@ -86,3 +94,4 @@ hi! link Search IncSearch
 hi! link SpecialKey NonText
 hi! link SpellCap SpellBad
 hi! link SpellRare SpellLocal
+hi! link WarningMsg DiffText
