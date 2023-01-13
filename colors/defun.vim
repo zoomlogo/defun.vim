@@ -69,7 +69,7 @@ execute "hi ModeMsg guifg=" . s:light10
 hi! link MsgArea ModeMsg
 hi! link MsgSeparator ModeMsg
 hi! link MoreMsg ModeMsg
-execute "hi EndOfBuffer guifg=" . s:dark01
+execute "hi NonText guifg=" . s:dark01
 execute "hi Normal guifg=" . s:light00 . " guibg=" . s:dark00
 execute "hi NormalFloat guifg=" . s:light11 . " guibg=" . s:dark00
 hi! link NormalNC NormalFloat
