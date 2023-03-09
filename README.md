@@ -1,5 +1,5 @@
 # defun.vim
-defun.vim is an improvement of [defined.nvim](https://github.com/PyGamer0/defined.nvim).
+defun.vim is a vim colorscheme which  is an improvement of [defined.nvim](https://github.com/PyGamer0/defined.nvim).
 It also supports vim.
 
 ## Screenshots
